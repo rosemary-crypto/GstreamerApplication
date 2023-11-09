@@ -60,30 +60,34 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="C:\CustomLibraries\props\cuda.props" />
-    <Import Project="C:\CustomLibraries\props\mylibrary.props" />
     <Import Project="C:\CustomLibraries\props\opencv.props" />
+    <Import Project="C:\CustomLibraries\props\mylibrary.props" />
+    <Import Project="C:\CustomLibraries\props\myplugins.props" />
     <Import Project="C:\CustomLibraries\props\trt.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="C:\CustomLibraries\props\cuda.props" />
-    <Import Project="C:\CustomLibraries\props\mylibrary.props" />
     <Import Project="C:\CustomLibraries\props\opencv.props" />
+    <Import Project="C:\CustomLibraries\props\mylibrary.props" />
+    <Import Project="C:\CustomLibraries\props\myplugins.props" />
     <Import Project="C:\CustomLibraries\props\trt.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="C:\MyBuilds\gstreamer\1.0\msvc_x86_64\share\vs\2010\libs\gstreamer-1.0.props" />
     <Import Project="C:\CustomLibraries\props\cuda.props" />
-    <Import Project="C:\CustomLibraries\props\mylibrary.props" />
     <Import Project="C:\CustomLibraries\props\opencv.props" />
+    <Import Project="C:\CustomLibraries\props\mylibrary.props" />
+    <Import Project="C:\CustomLibraries\props\myplugins.props" />
     <Import Project="C:\CustomLibraries\props\trt.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="C:\CustomLibraries\props\cuda.props" />
-    <Import Project="C:\CustomLibraries\props\mylibrary.props" />
     <Import Project="C:\CustomLibraries\props\opencv.props" />
+    <Import Project="C:\CustomLibraries\props\mylibrary.props" />
+    <Import Project="C:\CustomLibraries\props\myplugins.props" />
     <Import Project="C:\CustomLibraries\props\trt.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
@@ -133,7 +137,8 @@
       <AdditionalDependencies>opencv_core412d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /y /d "C:\CustomLibraries\lib\MyLibrary.dll" "$(outDir)"</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -152,7 +157,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /y /d "C:\CustomLibraries\lib\MyLibrary.dll" "$(outDir)"</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
